@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variabel Warna */
+:root {
+    --primary-color: hsl(0, 100%, 50%);
+    --secondary-color: hsl(211, 53%, 11%);
+    --text-color: hsl(0, 0%, 100%);
+    --bg-light: hsla(0, 0%, 100%, 0.9);
+    --bg-dark: hsla(180, 40%, 22%, 0.9);
+}
+/* hsl nyaman*/
+
+/* semua? */
+body, html {
+    overflow-x: hidden; /* kenapa ada slide hori?*/
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* NAVbarny kak  */
+.navigatobaru {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.1);
+    z-index: 1000;
+}
+
+.ikont {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.linkmenu {
+    display: flex;
+    gap: 20px;
+}
+
+.linkmenu li {
+    font-size: 18px;
+}
+
+.menubtn {
+    display: none;
+    cursor: pointer;
+    width: 35px;
+}
+
+/*  HEADER */
+header {
+    width: 100%;
+    height: 90vh;
+    background: url('wallpaperrobot.jpg') no-repeat center center/cover; /* background tiap page beda?*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.headercon {
+    color: var(--text-color);
+    max-width: 80%;
+}
+
+.headercon h1 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.line2 {
+    background-color: hsl(0, 0%, 0%);
+    width: 100%;
+    height: 4px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+
+
+/* === BUTTON STYLE === */
+.ctn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ctn:hover {
+    transform: scale(1.1);
+}
+
+/* gambar */
+.acara {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.baris {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.kolom {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.kolom img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+
+
+p {
+    margin-top: 30px;
+    text-align: justify;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+/* infokan */
+.infosebelah {
+    width: 100%;
+    height: 70vh;
+    background: url('backgrounddim2.avif') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.infosebelahcon {
+    width: 60%;
+    padding: 50px;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infosebelahcon h1 {
+    font-size: 7vmin;
+}
+
+/* footer nya kang*/
+.footer {
+    background: hsl(211, 53%, 11%);
+    color: hsl(0, 0%, 100%);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.isifooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.ikonfooter h2 span {
+    color: hsl(0, 100%, 71%);
+}
+
+.isifooter ul {
+    padding:  0;
+}
+
+.isifooter ul li {
+    margin: 10px 0;
+}
+
+
+.sosmedfooter .linksosmed {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.img {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.sosmedfooter .linksosmed img:hover {
+    transform: scale(1.1);
+}
+
+.footerakhir {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+/*detailhtml*/
+
+
+
+  .acara2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+    
+    .baris2 {
+        text-align: left;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .baris2-2 {
+        text-align: right;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .baris2-3 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 200px;
+    }
+    
+    .gambardetail1 {
+        width: 300px;
+        height: 300px;
+        float: left;
+    }
+    .gambardetail2 {
+        width: 300px;
+        height: 300px;
+        float: right;
+        
+    }
+    .gambardetail3 {
+        width: 300px;
+        align-items: center;
+        border-radius: 20px;
+    }
+    
+    .kolom1, .kolom2, .kolom3 {
+        flex: 1;
+        text-align: justify;
+    }
+    
+/*kontakhtml*/
+
+.kontak {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: hsl(0, 0%, 98%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
+    text-align: center;
+}
+
+.kontak h1 {
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 20%);
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: hsl(211, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.error {
+    color: hsl(0, 100%, 50%);
+    font-size: 14px;
+    display: none;
+    margin-bottom: 10px;
+}
+
+/* mobile settingan*/
+@media only screen and (max-width: 850px) {
+    .navigatobaru {
+        padding: 10px 15px;
+    }
+
+    .menubtn {
+        display: block;
+    }
+
+    .linkmenu {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background: rgba(34, 79, 79, 0.9);
+        flex-direction: column;
+        text-align: center;
+        transition: max-height 1.0s ease-in-out;
+    }
+
+    .mobile-menu {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .linkmenu li {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+
+    .header-content h1 {
+        font-size: 32px;
+    }
+
+    .isifooter {
+        flex-direction: column;
+        text-align: center;
+
+    }
+}
+/* masih butuh tutor orang*/
+/* review jujur gada moderen nya samsek*/
